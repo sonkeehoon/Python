@@ -9,9 +9,14 @@
 #             continue
 # print(isum)
 
-M,N=map(int,input().split())
-a=[0]*N
-lst=[]
-for i in range(M):
-    lst.append(a)
-print(lst)
+# 2차원 리스트를 초기화 할때 꼭 이런방식으로 하자
+k,n=3,3
+res1=[]
+for i in range(k):
+    line=[]
+    for j in range(n):
+        line.append(0)
+    res1.append(line)
+print(res1)
+
+        
