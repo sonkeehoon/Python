@@ -1,6 +1,17 @@
-import random
+# isum=0
+# for i in range(3333,10000,1):
+#     if i%1234==0:
+#         print(i)
+#         isum+=i
+#         if isum>=100000:
+#             break
+#         else:
+#             continue
+# print(isum)
 
-random.seed(random.random)
-
-for i in range(7):
-    print(random.randint(1,45),end=" ")
+M,N=map(int,input().split())
+a=[0]*N
+lst=[]
+for i in range(M):
+    lst.append(a)
+print(lst)
