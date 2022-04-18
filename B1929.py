@@ -12,6 +12,7 @@ for i in range(M,N+1):
     if i==1:continue
     if Prime(i):
         lst.append(i)
+# print("exe time is : {:.3f}".format(time.time()-start))
 for j in lst:
     print(j)
 print("exe time is : {:.3f}".format(time.time()-start))
