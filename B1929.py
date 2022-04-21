@@ -15,4 +15,4 @@ for i in range(M,N+1):
 # print("exe time is : {:.3f}".format(time.time()-start))
 for j in lst:
     print(j)
-print("exe time is : {:.3f}".format(time.time()-start))
+print("exe time is : {:.3f}".format(time.time()-start)) 
