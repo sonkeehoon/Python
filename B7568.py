@@ -10,5 +10,3 @@ for i in range(N):
         if w[i]<w[j] and h[i]<h[j]:
             rank[i]+=1
     print(rank[i],end=' ')
-# for i in rank:
-#     print(i,end=" ")
