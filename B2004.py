@@ -10,6 +10,4 @@ n,m=map(int,input().split())
 x1,y1=div(n,2),div(n,5)
 x2,y2=div(n-m,2),div(n-m,5)
 x3,y3=div(m,2),div(m,5)
-# x1-(x2+x3)와 y1-(y2+y3)중 최솟값을 찾야아 한다.
-print(x1,y1,x2,y2,x3,y3)
 print(min(x1-x2-x3,y1-y2-y3))
