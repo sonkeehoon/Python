@@ -8,13 +8,15 @@ import sys
 input=sys.stdin.readline
 N,M=map(int,input().split())
 lst=[]
-def cwr(s):
+def cwr():
+    global lst
     if len(lst)==M:
         print(*lst)
         return
-    for i in range(s,N+1):
+    for i in range(1,N+1):
+        if len(lst)!=0 and i<lst[-1]:
+            continue
         lst.append(i)
-        cwr(i)
+        cwr()
         lst.pop()
-        
-cwr(1)
+cwr()
