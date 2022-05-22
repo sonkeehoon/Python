@@ -19,12 +19,9 @@
 #     res1.append(line)
 # print(res1)
 
-import random
-z=0
-random.seed(random.random())
-def 난수(x,y):
-    z=random.random()
-    return z
-x,y=map(int,input().split())
-print(난수(x,y))
+from itertools import permutations as perm
+N,M=map(int,input().split())
+lst=[str(i) for i in range(1,N+1)]
+for i in perm(lst,M):
+    print(' '.join(i))
         
