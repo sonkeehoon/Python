@@ -1,3 +1,4 @@
+# 220524 실버2.. 쉽게 짤수 있는건데 쓸데없이 오래걸렸다
 A=input()
 idx,lst=[0],[]
 for i in range(len(A)):
