@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <style>
+            body { text-align: center; }
+        </style>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <hr>
+        <form>
+            <input type="text" name="number1" id="number1" width="200" size="5">
+            <select name="operator" id="operator">
+                <option selected>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <input type="text" name="number2" id="number2" width="200" size="5">
+            <input type="button" onclick="calc()" value="계산">
+            <input type="reset" value="reset">
+        </form>
+        <hr>
+        <div id="result"></div>
+        <script src="calc.js"></script>
+    </body>
+</html>
