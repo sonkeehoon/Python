@@ -1,0 +1,12 @@
+a {
+    color : #ff3399;
+    font-size: 24px;
+}
+#id {
+    background-color: rgba(102,205,170,0.5);
+    width: 250px;
+}
+#id2 {
+    background-color: #ee8dbd;
+    width: 420px;
+}
