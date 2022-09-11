@@ -1,12 +1,70 @@
-a {
+/* 글자를 진하게 하기 
+* {
+    font-weight: bold;
+} */ 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+
+body {
+    text-align: center;
+    background-color: bisque;
+}
+
+.itzy {
     color : #ff3399;
-    font-size: 24px;
+    font-size: 20px;
 }
-#id {
+#title {
     background-color: rgba(102,205,170,0.5);
-    width: 250px;
+    font: italic normal 45px 'Kirang Haerang', cursive;
+    /* font-family: 'Kirang Haerang',cursive;
+    font-size: 20px;
+    font-weight: normal; */
+    text-align: center;
+    color:black;
+    /* width: 250px; */
 }
-#id2 {
+#title2 {
     background-color: #ee8dbd;
-    width: 420px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 25px;
+    /* width: 420px; */
 }
+
+.re {
+    color:#ff3399;
+    border: 1px solid red;
+    padding: 12px 24px;
+	margin-bottom: 8px;
+    display: inline-block;
+
+}
+
+/* 타겟을 지정하기
+a[target="_blank or _self"] {
+	color: red;
+} */
+
+/* 클래스에 타겟을 지정하기
+ .link[target="_blank"] {
+	color: red;
+} */
+
+
+
+/* 방문하지 않은 링크일 때 */
+/* a:link {
+	color: turquoise;
+} */
+/* 방문한 링크일 때 */
+/* a:visited {
+	color: green;
+} */
+/* 링크에 마우스를 올렸을 때 */
+/* a:hover {
+	background-color: yellow;
+} */
+/* 선택된 링크일 때 */
+/* a:active {
+	background-color: blue;
+} */
