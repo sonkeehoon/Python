@@ -2,6 +2,15 @@
 * {
     font-weight: bold;
 } */ 
+/* .main {
+	background-color: skyblue;
+	width: 100px;
+	padding: 24px;
+}
+.sub {
+	background-color: pink;
+	padding: inherit;
+} */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
 
@@ -16,29 +25,55 @@ body {
 }
 #title {
     background-color: rgba(102,205,170,0.5);
-    font: italic normal 45px 'Kirang Haerang', cursive;
+    font: italic normal 50px 'Kirang Haerang', cursive;
     /* font-family: 'Kirang Haerang',cursive;
     font-size: 20px;
     font-weight: normal; */
     text-align: center;
     color:black;
-    /* width: 250px; */
+    /* width: 500px; */
 }
 #title2 {
     background-color: #ee8dbd;
     font-family: 'Nanum Pen Script', cursive;
     font-size: 25px;
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
     /* width: 420px; */
 }
+.submit{
+    background:#f770b3;
+    color:white;
+    font-size: 12px;
+    margin: 25px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-color:white;
+}
+#select-ITZY{
+    background-color:#f770b3;
+    color:aliceblue;
+    border-radius: 4px;
+    font-size: 15px;
+    border-color: #f770b3;
+    margin:25px;
+    padding: 4px 8px;
+}
 
-.re {
-    color:#ff3399;
-    border: 1px solid red;
+.recent {
+    background-color: #f770b3;
+    color:white;
+    border-radius: 4px;
     padding: 12px 24px;
 	margin-bottom: 8px;
     display: inline-block;
 
 }
+.recent:hover {
+    background-color:cornflowerblue;
+    transition: all 2s;
+}
+
 
 /* 타겟을 지정하기
 a[target="_blank or _self"] {

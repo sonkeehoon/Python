@@ -49,3 +49,8 @@ float은 뜨다,띄우다 라는 뜻을 가지며 말 그래도 요소(이미지
 	width: 200px;
 	float: left;
 }
+
+flex container: 방향과 흐름
+flex-direction으로 flex container 안에서 flex item이 배치될 기본 방향을 정할 수 있음
+flex-box는 일반적으로 한 줄에 들어가도록, 즉 flex item이 여러 줄에 걸쳐지지 않도록 정렬됨
+flex는 너무 복잡하고 어렵다. 프론트엔드 개발자가 목표는 아니니까 그냥 읽어보고 넘어가자

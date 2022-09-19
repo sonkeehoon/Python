@@ -1,0 +1,172 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+  }
+  .signup-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .signup {
+    flex-grow: 1;
+  }
+  .signup > article {
+    width: 100%;
+    max-width: 935px;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: center;
+  }
+  .insta-example-img {
+    height: 620px;
+    flex: 0 0 450px;
+    background-image: url(https://www.pngitem.com/pimgs/m/422-4220612_clip-art-instagram-mockup-instagram-in-phone-mockup.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .signup-contents-container {
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .signup-form-container,
+  .account-check {
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    background: #fff;
+    margin: 0 0 10px;
+    padding: 10px 0;
+  }
+  .signup-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .signup-form-container > h1 {
+    font-size: 2.2rem;
+    margin: 22px auto 12px;
+  }
+  .signup-form > form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-title {
+    margin: 0 40px 10px;
+    color: #8e8e8e;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+  .btn-container {
+    margin: 8px 40px;
+    display: flex;
+  }
+  .btn-container > button {
+    border: 0;
+    color: #fff;
+    background-color: #0095f6;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+    padding: 5px 9px;
+  }
+  .btn-container .fa-facebook-square {
+    margin-right: 8px;
+  }
+  .divider-container {
+    margin: 10px 40px 18px;
+    display: flex;
+    align-items: center;
+  }
+  .divider {
+    height: 1px;
+    flex: 1 1;
+    background-color: #dbdbdb;
+  }
+  .divider-text {
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+  }
+  .input-container {
+    margin: 0px 40px 6px;
+    text-align: left;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+  }
+  .input-container > input[type="text"],
+  .input-container > input[type="password"] {
+    background: none;
+    outline: 0;
+    margin: 0;
+    border: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8e8e8e;
+    padding: 9px 0 7px 8px;
+    flex: 1;
+  }
+  .terms-container {
+    margin: 10px 40px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8e8e8e;
+  }
+  .terms-container > a {
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+  }
+  .account-check-title {
+    color: #262626;
+    font-size: 14px;
+    margin: 15px;
+  }
+  .account-check-title > a {
+    text-decoration: none;
+    color: #0095f6;
+  }
+  .insta-info {
+    padding: 0 20px;
+  }
+  .insta-info-wrapper {
+    max-width: 1012px;
+    margin: 0 auto;
+    padding: 38px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .insta-info-navbar > ul {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    list-style: none;
+    margin: 0 16px 0 0;
+    flex-grow: 1;
+    display: flex;
+  }
+  .navbar-item {
+    margin-bottom: 7px;
+    margin-right: 16px;
+  }
+  
+  .navbar-item > a {
+    color: #00376b;
+    text-decoration: none;
+  }
+  .copyright {
+    color: #8e8e8e;
+    font-weight: normal;
+  }
