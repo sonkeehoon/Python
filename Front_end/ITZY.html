@@ -9,27 +9,32 @@
 
     <body>
         <a id="title">ITZY Fan 투표</a><br>
-        <a id="title2"> 좋아하는 ITZY 멤버에게 투표해 주세요! (중복 선택 가능)<br></a>
+        <a id="title2"> 좋아하는 ITZY 멤버에게 투표해 주세요! (중복 선택 가능)<br><br></a>
+        <button type="button" onclick="document.getElementById('date').innerHTML=Date()" class="date">날짜 및 시간</button>
+        <p id="date"></p>
         <hr>
 
         <h3>ITZY MEMBER</h3>
 
-        <input type="checkbox" name="Yeji" value="Yeji"><a class="itzy"> 예지 </a><br>
+        <input type="checkbox" value="Yeji"><a class="itzy" name="Yeji"> 예지 </a><br>
         <img title="예지" src="yeji.jpg" width="300" height="550"><br>
         <hr><br>
-        <input type="checkbox" name="Lia" value="Lia" ><a class="itzy"> 리아 </a><br>
+        <input type="checkbox" value="Lia" ><a class="itzy" name="Lia"> 리아 </a><br>
         <img title="리아" src="lia.jpg" width="350"><br>
         <hr><br>
-        <input type="checkbox" name="Ryujin" value="Ryujin" ><a class="itzy"> 류진 </a><br>
+        <input type="checkbox" value="Ryujin" ><a class="itzy" name="Ryujin"> 류진 </a><br>
         <img title="류진" src="ryujin.jpg">
         <hr><br>
-        <input type="checkbox" name="Chaeryeong" value="Chaeryeong" > <a class="itzy"> 채령 </a><br>
+        <input type="checkbox" value="Chaeryeong" > <a class="itzy" name="Chaeryeong"> 채령 </a><br>
         <img title="채령" src="chaeryeong.jpg">
         <hr><br>
-        <input type="checkbox" name="Yuna" value="Yuna" > <a class="itzy"> 유나 </a><br>
+        <input type="checkbox" value="Yuna" > <a class="itzy" name="Yuna"> 유나 </a><br>
         <img title="유나" src="yuna.jpg">
         <br><br>
-        <button type="reset" class="submit">제출</button>
+
+        <button type="button" class="submit" onclick='document.getElementById("submit").innerHTML="참여해 주셔서 감사합니다!"'>제출</button>
+        <p id="submit"></p>
+
         <br><br><hr><br>
 
         <select name="ITZY" id="select-ITZY">
