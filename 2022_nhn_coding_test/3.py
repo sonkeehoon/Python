@@ -4,3 +4,4 @@ maze=["00000"]+maze
 for i in range(len(maze)):
     maze[i]="0"+maze[i]
     print(maze[i])
+# 포기
