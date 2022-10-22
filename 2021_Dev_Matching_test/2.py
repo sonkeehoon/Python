@@ -8,6 +8,7 @@ def solution(rows, columns, queries):
     answer,res = [],[]
     m=[[columns*j+i+1 for i in range(columns)] for j in range(rows)]
     copy_m=[item[:] for item in m] # matrix의 복사본 생성
+    
     for query in queries:
         x1=query[0]-1
         y1=query[1]-1
@@ -41,6 +42,6 @@ def solution(rows, columns, queries):
         
     return answer
 
-print(solution(6,6,[[2,2,5,4],[3,3,6,6],[5,1,6,3]]))
-print(solution(3,3,[[1,1,2,2],[1,2,2,3],[2,1,3,2],[2,2,3,3]]))
-print(solution(100,97,[[1,1,100,97]]))
+# print(solution(6,6,[[2,2,5,4],[3,3,6,6],[5,1,6,3]]))
+# print(solution(3,3,[[1,1,2,2],[1,2,2,3],[2,1,3,2],[2,2,3,3]]))
+# print(solution(100,97,[[1,1,100,97]]))
