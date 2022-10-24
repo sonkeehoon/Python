@@ -1,4 +1,5 @@
 # 1. 로또의 최고 순위와 최저 순위
+
 def solution(lottos, win_nums): # win_nums = 당첨번호, lottos = 구매한 로또 번호
     
     zero = lottos.count(0) # lottos에서 0의 갯수
