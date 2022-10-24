@@ -13,3 +13,4 @@ def solution(lottos, win_nums): # win_nums = 당첨번호, lottos = 구매한 �
     return result
 
 # print(solution([45, 4, 35, 20, 3, 9],[20, 9, 3, 45, 4, 35]))
+
