@@ -1,10 +1,10 @@
-# 2. 행렬 테두리 회전하기
+# 2. 행렬 테두리 회전하기 : https://school.programmers.co.kr/learn/courses/30/lessons/77485
 
 def solution(rows, columns, queries):
     # from copy import deepcopy 
     # 복사본 생성할 때, 리스트의 크기가 큰 경우 
     # deepcopy 함수는 시간이 매우 오래걸린다. 
-    # copy_m=[item[:] for item in 원본] 이러한 slicing 방식을 애용하도록 하자
+    # copy_m=[item[:] for item in 원본] 이러한 slicing 방식을 이용하도록 하자
     
     answer,res = [],[]
     m=[[columns*j+i+1 for i in range(columns)] for j in range(rows)]
