@@ -1,3 +1,4 @@
+# 신규 아이디 추천 : https://school.programmers.co.kr/learn/courses/30/lessons/72410
 # 정규 표현식 예제
 import re
 def solution(new_id):
