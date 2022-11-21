@@ -1,5 +1,3 @@
-# 숫자 카드 나누기 : https://school.programmers.co.kr/learn/courses/30/lessons/135807
-# 72.2 / 100 (미완)
 def allDivide(lst, div):
     for i in lst:
         if i%div != 0:
