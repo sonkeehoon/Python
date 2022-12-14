@@ -5,7 +5,8 @@ def solution(k, tangerine):
     res = []
     tang_cnt = Counter(tangerine)
     # print(tang_cnt)
-    tang_cnt = dict(sorted(tang_cnt.items(), key = lambda x : x[1], reverse = True)) # tang로 정렬
+    tang_cnt = dict(sorted(tang_cnt.items(), key = lambda x : x[1], reverse = True)) # value기준 내림차순으로 정렬
+    print(tang_cnt)
     # print(tang_cnt)
     for v in tang_cnt.values():
         if k - v <= 0:
