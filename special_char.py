@@ -1,7 +1,9 @@
 # input : sample.txt
 # output : result.txt
 
-import re # 2번 방법에서 활용할 re모듈
+# import re # 2번 방법에서 활용할 re모듈
+from collections import Counter
+
 def print_result(target):
     global start
     end = len(target)
@@ -46,7 +48,7 @@ print_result(target)
 print("123".isdigit())
 print("hello".isalpha())
 print("keehoon9312".isalnum())
-print(target)
+print(Counter(target))
 
 # result.txt에 결과텍스트 저장
 f = open("./result.txt", "w", encoding = "utf8")
