@@ -1,5 +1,6 @@
 # input : sample.txt
 # output : result.txt
+ 
 
 import re # 2번 방법에서 활용할 re모듈
 def print_result(target):
