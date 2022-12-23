@@ -1,38 +1,35 @@
 # 게임 맵 최단거리 : https://school.programmers.co.kr/learn/courses/30/lessons/1844
 # deque와 bfs
-# 어렵다.. 이걸 혼자 생각해낼수 있다면 참 기쁘겠다
+# 어렵다.. 이걸 혼자 생각해낼수 있다면 참 뿌듯하겠다
 from collections import deque
-def solution(maps):
+def bfs(start, maps):
     # maps : 지도, answer : 최단거리
     # (1,1) -> (5,5) 경로
     # maps에서 0은 벽, 1은 길
-    answer = 0
-    n, m = len(maps), len(maps[0])
+    dirs = [[0,1], [1,0], [0,-1], [-1,0]]
+    q = deque()
+    q.append(start)
+    print(start)
     
-    dx = [-1, 1, 0, 0]
-    dy = [0, 0, -1, 1]
+    while q:
+        y, x, cnt = q.popleft()
+        maps[y][x] = 0
+        for dy, dx in dirs:
+            print(f"(y,x) = ({y},{x})")
+            ny, nx = y + dy, x + dx
+            print(q,f"(ny,nx) = ({ny},{nx})")
+            # 다음 지점이 목적지면 cnt+1을 반환
+            if ny == len(maps)-1 and nx == len(maps[0])-1 : 
+                print("목적지 입니다.")
+                return cnt + 1
+            # 다음 지점이 목적지가 아니고 벽이 아닌 길일 때
+            elif 0 <= ny <= len(maps) and 0 <= nx < len(maps[0]) and maps[ny][nx] == 1 :
+                # 지나간 점은 0(벽)으로 만든다
+                maps[ny][nx] = 0
+                q.append([ny, nx, cnt + 1])
     
-    queue = deque([(0,0)])
-    
-    while queue:
-        x, y = queue.popleft()
-        
-        # 상하좌우 4방향 확인
-        for i in range(4): # 우 : (-1, 0) 좌 : (1, 0) 하 : (0, -1) 상 : (0, 1)
-            nx = x + dx[i]
-            ny = y + dy[i]
-            
-            # 맵을 벗어나거나 길이 아니면 continue
-            if nx < 0 or nx >= n or ny < 0 or ny >= m or maps[nx][ny] != 1:
-                continue
-            
-            maps[nx][ny] = maps[x][y] + 1 
-            queue.append((nx,ny))
-            print(queue)
-            
-    answer = maps[-1][-1]
-    if answer > 1:
-        return answer
     return -1
     
+def solution(maps):
+    return bfs([0,0,1], maps)
 print(solution([[1,0,1,1,1],[1,0,1,0,1],[1,0,1,1,1],[1,1,1,0,1],[0,0,0,0,1]]))
