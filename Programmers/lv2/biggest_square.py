@@ -1,3 +1,4 @@
+# 가장 큰 정사각형 찾기 : https://school.programmers.co.kr/learn/courses/30/lessons/12905
 def solution(board):
     row = len(board)
     column = len(board[0])
