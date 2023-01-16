@@ -10,5 +10,3 @@ for idx,n in enumerate(reversed(str(b))):
     sum += res * (10**idx)
     
 print(sum)
-
-    
