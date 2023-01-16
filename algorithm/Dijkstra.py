@@ -1,3 +1,7 @@
+# 최단 경로를 찾는 알고리즘
+# start에서 각 점까지 가는 최단 경로를 구해준다 (갈수 없는경우 INF)
+# queue로 구현해봤지만 효율성을 높이려면 heapq로 구현하면 된다
+# 그래프 보기 : https://it-garden.tistory.com/m/241
 import sys
 INF = sys.maxsize
 # input = sys.stdin.readline
