@@ -1,4 +1,4 @@
-# https://school.programmers.co.kr/learn/courses/30/lessons/12936
+# https://school.programmers.co.kr/learn/courses/30/lessons/12936 : 줄 서는 방법
 # 이상하게 시간을 많이 잡아먹은 문제.. 질문하기를 보면서 풀었다
 # solution2는 시간초과가 난다. solution1으로 풀면 효율성 테스트까지 통과.
 def solution1(n, k): # TC : n = 4, k = 22, result = [4,2,3,1]
