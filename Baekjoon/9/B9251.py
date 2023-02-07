@@ -1,22 +1,23 @@
-A=input()
-B=input()
-dp=[0]*1000
-for i in range(len(A)):
-    temp=0
-    for j in range(len(B)):
-        if temp<dp[j]:
-            temp=dp[j]
-        elif A[i]==B[j]:
-            dp[j]=temp+1
-print(max(dp))
+# https://suri78.tistory.com/11
+# 위 글을 읽고 겨우 이해했다.. 나 혼자 이런생각은 못해낼것 같다
+# 그냥 읽어보고 이런 알고리즘이 있구나 하고 넘어가려고 한다
+import sys
+input = sys.stdin.readline
+A = input().strip()
+B = input().strip()
+A_len, B_len = len(A), len(B)
+lst = [0]*B_len
+# print(A,B,A_len,B_len)
+for i in range(A_len):
+    cnt = 0
+    for j in range(B_len):
+        if cnt < lst[j]:
+            cnt = lst[j]
+        elif A[i] == B[j]:
+            lst[j] = cnt + 1
 
-# sa,sb=input(),input()
-# dp=[0]*1000
-# for i in range(len(sa)):
-#     MAX=0
-#     for j in range(len(sb)):
-#         if MAX<dp[j]:
-#             MAX=dp[j]
-#         elif sa[i]==sb[j]:
-#             dp[j]=MAX+1
-# print(max(dp))
+print(max(lst))
+        
+        
+    
+
