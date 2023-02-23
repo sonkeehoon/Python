@@ -1,19 +1,12 @@
 import sys
+from collections import deque
 input = sys.stdin.readline
-N,K = map(int,input().split())
-q =[i+1 for i in range(N)]
-i = 0
-res = []
-for _ in range(N):
-    i += K-1
-    l = len(q)
-    if i < l:
-        res.append(q.pop(i))
-        continue
-    while i >= l:
-        i -= l
-    res.append(q.pop(i))
-print("<",end='')
-print(*res,sep=', ',end='')
-print(">")
+T = int(input())
+for _ in range(T):
+    N,M = map(int,input().split())
+    q = deque(map(int,input().split()))
+    cnt = 0
+    if max(q) == q[0]:
+        q.popleft()
+        
     
