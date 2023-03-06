@@ -1,8 +1,6 @@
-import sys
-input = sys.stdin.readline
 while 1:
     try:
-        print(input().rstrip())
+        print(input())
     except EOFError:
         break
     
