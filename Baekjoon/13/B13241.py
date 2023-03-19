@@ -18,4 +18,3 @@ else: # 있으면
         j += 1
     print(tmp*A*B)
         
-        
