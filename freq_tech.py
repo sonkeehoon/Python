@@ -1,6 +1,8 @@
 # 어디에 써먹을지는 모르겠지만.. 갑자기 그냥 만들어봤다
 # 텍스트의 빈도 분석을 해주는 그런 프로그램..
 from collections import Counter
+import numpy as np
+import pandas as pd
 
 def del_all_char_inList(txt,target):
     while target in txt:
@@ -30,7 +32,14 @@ if c[ipt] == 0:
 else:
     print(f"'{ipt}'은(는) {c[ipt]}개 있습니다")
 
-TF = input("\n전체 빈도수를 출력할까요?(Y/N) ")
+TF = input("\n전체 빈도수를 저장할까요?(Y/N) ")
 if TF == 'Y' or TF == 'y':
     print(c)
-print("bye!")
+    a = list(c.keys())
+    b = list(c.values())
+    data = pd.DataFrame({"word" : a, "frequency" : b})
+    data = data.sort_values(by = "frequency", ascending = False)
+    data.to_csv('data.csv', sep='\t', index=False, encoding="utf-8-sig")
+
+
+print("\nbye!")
