@@ -1,20 +1,27 @@
-import sys,math
+import sys
+from math import gcd
 input = sys.stdin.readline
 N = int(input())
-trees = [int(input()) for _ in range(N)]
 
-dist = [trees[i+1] - trees[i] for i in range(len(trees)-1)]
+dist = []
+tmp,tmp2 = 0,0
+# trees 리스트는 필요 없음
+# dist = [trees[i+1] - trees[i] for i in range(len(trees)-1)]
+for i in range(N): # 시간을 줄이기 위해 나무 사이의 거리만 dist에 append
+    if i == 0:
+        tmp = int(input())
+    else:
+        tmp2 = int(input())
+        dist.append(tmp2-tmp)
+        tmp = tmp2
+        
 size = len(dist)
 idx = 2
-gcd = math.gcd(dist[0],dist[1]) # gcd(4,6) = 2
+gcdnum = gcd(dist[0],dist[1]) # gcd(4,6) = 2
 while idx < size :
-    gcd = math.gcd(gcd, dist[idx])
+    gcdnum = gcd(gcdnum, dist[idx])
     idx += 1
-    
-start,end = trees[0],trees[-1]
 cnt = 0
 for j in dist: # 시간을 줄이기 위한 전략
-    if j == gcd:
-        continue
-    cnt += (j//gcd)-1
+    cnt += (j//gcdnum)-1
 print(cnt)
