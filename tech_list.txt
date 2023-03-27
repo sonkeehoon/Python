@@ -5,10 +5,10 @@
 
     - 담당업무
         - 영업관리 시스템 개발
-        - Spring Framework 기반 JAVA 개발
+        - Spring Framework 기반 Java 개발
         - Vue.js 기반 Front-end Framework
     - 필수역량
-        - Java , jsp , html5 , JavaScript 개발 경험자
+        - Java , Jsp , html5 , JavaScript 개발 경험자
         - SQL ( Oracle ) 개발 경험자
     - 우대사항
         - 설계 및 개발에 관심 있는 분
@@ -42,7 +42,7 @@
         - 서버관리 , 네트워크관리 등 Infra 관련 지식 보유
     - 우대사항
         - IT보안에 대한 업무경험이나 지식이 있는 분
-        - Shell 프로그래밍 , 웹 ( PHP , JSP ) 개발이 가능한 분
+        - Shell 프로그래밍 , 웹 ( PHP , Jsp ) 개발이 가능한 분
 
 - 에이케이아이에스(주)
     - 백화점 시스템 운영(신입)
@@ -82,7 +82,7 @@
     
     - 직무별 필요역량
         - OS 할용 능력 보유 ( Linux / Unix 등)
-        - 프로그래밍 기술 보유( Java , HTML , JSP , Python , JavaScript , CSS , SQL등)
+        - 프로그래밍 기술 보유( Java , HTML , Jsp , Python , JavaScript , CSS , SQL등)
         - 관계형 데이터베이스 기술 보유( Oracle 등)
     
     - 데이터
@@ -105,7 +105,7 @@
     
     - 개발환경
         - DB : Oracle , MariaDB
-        - Lang : Java , Jsp , jquery
+        - Lang : Java , Jsp , Jquery
         - Framework : Spring , Strutus2 , Mybatis
         - WAS : Jboss , Tomcat
         - 기타 : SVN , Jenkins , Gradle
@@ -135,7 +135,7 @@
     - 담당업무
         - 웹 사이트 개발 및 운영 관리
     - 스킬
-        - PHP, JSP, MySQL, OracleDB, HTML, CSS, JAVA, JavaScript
+        - PHP,Jsp, MySQL, OracleDB, HTML, CSS, Java, JavaScript
     - 핵심역량
         - 성실성, 협동심, 꼼꼼함
     - 자격요건
@@ -176,5 +176,18 @@
         - 프로젝트 환경 구성이 가능한 사람
         - 교육이나 업무 외 개인 프로젝트를 해본 적 있는 사람
 
+- 오픈오브젝트
+    - 웹, 서버 개발
+
+    - 자격요건
+        - 학력 : 대졸이상
+        - 경력 : 신입, 경력
+    - 보유기술
+        - Java, Jsp, Jquery 개발 능숙자
+        - html, JavaScript, CSS 개발 능숙자
+        - Oracle, MySQL, MS-SQL 등 개발 경험 및 DBMS 설계 가능자
+        - Spring, 전자정부 등 프레임워크 경험자
+        - restful API 개발 경험자
+        - 유닉스, 리눅스 등 시스템 이해도가 높으신 분
 
 
