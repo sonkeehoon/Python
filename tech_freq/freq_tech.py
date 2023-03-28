@@ -7,7 +7,7 @@ import string
 import pandas as pd
 
 # 텍스트를 불러오고 단어별로 list에 담는다(공백을 기준으로 한 단어로 취급)
-with open('./tech_list.txt',"r",encoding="utf-8") as f:
+with open('./tech_freq/tech_list.txt',"r",encoding="utf-8") as f:
     txt = f.readlines() # 불러온 텍스트를 저장할 리스트 txt
     txt2 =[] # txt를 단어별로 분리해서 담을 리스트 txt2
     for idx,t in enumerate(txt): # 개행문자들을 없애고 공백을 기준으로 분리해서 txt2에 담는다
