@@ -215,3 +215,17 @@
         - 버전관리( git ) 사용 경험이 있는 분
         - 웹 서버 운영 경험 및 네트워크 구조에 대한 이해가 높은 분
 
+- 뱅크웨어글로벌
+    - 인프라 SW 엔지니어
+    
+    - 담당 업무
+        - Spring/SpringBoot 기반의 제품을 통한 프레임워크 구축 및 개발 표준정의, 개발자 지원, 시스템 공통 업무등의 직무
+        - Spring/Camel 기반의 제품을 통한 MCI/EAI/FEP 시스템 구축 직무
+        - APM/MFT 제품을 통한 기술지원 업무
+    
+    - 필요기술
+        - Java
+        - Spring Framework
+        - Linux, Unix 기본 명령어
+        - SVN, Git, Maven, Gradle 기본 사용 방법
+
