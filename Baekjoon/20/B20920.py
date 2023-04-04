@@ -1,6 +1,7 @@
 # 영단어 암기는 괴로워 : https://www.acmicpc.net/problem/20920
 # 스스로 해결 여부 : O
 # 딕셔너리와 get함수로 풀었다
+# 다중 정렬을 공부할수 있는 문제
 
 import sys
 from collections import Counter
