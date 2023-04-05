@@ -4,26 +4,17 @@
 # set에 데이터를 여러개 넣을때는 add보다 update를 활용하면 좋다 (중복되는 원소는 알아서 제거해준다)
 # 1개의 값을 넣을때는 add만 가능하다 (update로 1개의 값을 넣으려고 하면 error 발생)
 # 처음에 set으로 접근했다가 문제를 제대로 이해하고 defaultdict로 다시 풀었다
+# 마지막에 다시 set으로 풀었다. 이게 가장 효율적인 코드같다
 
 import sys
-from collections import defaultdict
 input = sys.stdin.readline
 
-target = "ChongChong"
-dance = defaultdict(int)
-cnt = 0
+dance = {'ChongChong'}
 for _ in range(int(input())):
     x,y = input().split()
-    if x == target or y == target:
-        dance[x], dance[y] = True, True
-        continue
-    if dance[x] or dance[y]:
-        dance[x], dance[y] = True, True
-
-print(dance)
-for v in dance.values():
-    if v: cnt += 1
-print(cnt)
+    if x in dance or y in dance: dance.update((x,y))
+    
+print(len(dance))
     
         
         
