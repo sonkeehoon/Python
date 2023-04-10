@@ -10,3 +10,6 @@ for i in range(1,4):
         else:
             print(two_lst[i][j],end='')
     print("]")
+    
+
+    
