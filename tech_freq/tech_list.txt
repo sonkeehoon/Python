@@ -240,4 +240,48 @@
     - 우대사항
         - 정보처리기사 자격증 소지자
 
+- 메가스터디
+    - 서비스 플랫폼 개발자
+    
+    - 담당 업무
+        - 신규 플랫폼 개발 및 서비스 전환
+        - 지속적인 통합 배포 환경을 위한 시스템 구축
+
+    
+    - 우대사항
+        - 관련 학과 전공
+        - 웹기반 플랫폼 서비스 개발 및 실무 경력 경험
+        - 대용량 트래픽 서비스 설계 개발 운영 경험
+    
+    - 자격요건
+        - 학력 : 학력무관
+        - 경력 : 경력무관
+        - Java Spring, SpringBoot, ASP.NET 등
+        - RDBMS( MS-SQL, MySQL, MariaDB) 유경험자
+        - 원활한 커뮤니케이션 및 협업 능력
+
+- 유앤아이티소프트
+    - 백엔드 서버 개발자
+    
+    - 담당 업무
+        - 방송 플랫폼 관련 콘텐츠 관리 시스템 개발
+        - 서버 유지 보수
+
+    
+    - 우대사항
+        - 전공자우대
+        - HTML CSS JavaScript
+        - SPA 프레임워크(React, Vue, Angular)
+        - Java, Spring 프레임워크, ORM 프레임워크
+        - DBMS(Oracle, MySQL)
+        - 이슈 버전 관리툴(Jira, Redmine, SVN, Git)
+    
+    - 자격요건
+        - 학력 : 학력무관
+        - 경력 : 경력무관
+        - Java Spring, SpringBoot, ASP.NET 등
+        - RDBMS( MS-SQL, MySQL, MariaDB) 유경험자
+        - 원활한 커뮤니케이션 및 협업 능력
+
+
 
