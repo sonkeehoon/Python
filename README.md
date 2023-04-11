@@ -1,4 +1,7 @@
-# 파이썬 코드 저장소
+![image](https://user-images.githubusercontent.com/81700507/231072652-6cb894c2-d1be-414b-9d64-40d7f099c429.png)
+
+
+# 코드 저장소
 ## Baekjoon/ : 백준 사이트 문제 코드
 ## Programmers/ : 프로그래머스 사이트 문제 코드
 ## Algorithm/ : 알고리즘 별로 자습한 코드
