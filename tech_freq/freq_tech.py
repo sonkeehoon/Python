@@ -22,7 +22,7 @@ del c['']
 
 # 입력받은 문자가 몇개 있는지 알려주기
 ipt = input("찾고싶은 단어가 있으신가요?\n하나의 단어를 입력하세요 : ")
-print(c)
+# print(c)
 print()
 if c[ipt] == 0:
     print(f"'{ipt}'은(는) 텍스트에 없네요")
