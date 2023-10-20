@@ -1,3 +1,4 @@
+# 스택 2 : https://www.acmicpc.net/problem/28278
 from collections import deque
 import sys
 input = sys.stdin.readline
