@@ -7,27 +7,28 @@ N = int(input())
 stack = deque()
 for _ in range(N):
     cmd = input()
-    if cmd[0] == "1":
+    type = cmd[0]
+    if type == "1":
         X = int(cmd[2:])
         stack.append(X)
         
-    elif cmd[0] == "2":
+    elif type == "2":
         if stack:
             print(stack.pop())
             continue
         print(-1)
     
-    elif cmd[0] == "3":
+    elif type == "3":
         size = len(stack)
         print(size)
     
-    elif cmd[0] == "4":
+    elif type == "4":
         if stack:
             print(0)
             continue
         print(1)
     
-    elif cmd[0] == "5":
+    elif type == "5":
         if stack:
             print(stack[-1])
             continue
