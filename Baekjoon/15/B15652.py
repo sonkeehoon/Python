@@ -8,15 +8,12 @@ import sys
 input=sys.stdin.readline
 N,M=map(int,input().split())
 lst=[]
-def cwr():
-    global lst
+def combination(s):
     if len(lst)==M:
         print(*lst)
         return
-    for i in range(1,N+1):
-        if len(lst)!=0 and i<lst[-1]:
-            continue
+    for i in range(s,N+1):
         lst.append(i)
-        cwr()
+        combination(i)
         lst.pop()
-cwr()
+combination(1)
