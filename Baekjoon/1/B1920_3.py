@@ -21,9 +21,8 @@ input = sys.stdin.readline
 N = int(input()) # arr에 들어갈 배열
 A = list(map(int,input().split()))
 M = int(input()) # target 값들이 들어있는 배열
-A.sort()
-
 targets = list(map(int,input().split()))
+A.sort()
 
 for target in targets:
     print(binary_search(A, target))
