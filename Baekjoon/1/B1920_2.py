@@ -1,3 +1,4 @@
+# 수 찾기 : https://www.acmicpc.net/problem/1920
 N = input()
 A = set(map(int,input().split()))
 M = input()
