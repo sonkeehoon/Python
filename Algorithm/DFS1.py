@@ -8,24 +8,21 @@ graph = [
     [3],
     [3],
     [2],
-    [7]
+    [2]
     ]
 
 def dfs(graph, root):
-    # visited = [False]*(n+1)
+    visited = [False]*n
     time.sleep(1)
     
     stack = []
     stack.append(root)
-    print(root)
     
     while stack:
+        time.sleep(1)
         node = stack.pop()
-        
+        print(node,stack)
         for cur in graph[node]:
-            if not graph[cur]:
-                continue
-            print(cur)
             stack.append(cur)
 
 

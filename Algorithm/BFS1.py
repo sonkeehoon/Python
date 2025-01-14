@@ -13,7 +13,8 @@ graph = [
 
 
 def bfs(graph, n, root):
-    visited = [False]*(n+1)
+    visited = [False]*n
+    
     
     q = deque()
     q.append(root)
