@@ -8,26 +8,24 @@ graph = [
     [3],
     [3],
     [2],
-    [7]
+    [2]
     ]
 
 
 def bfs(graph, n, root):
     visited = [False]*n
     
-    
     q = deque()
     q.append(root)
-    print(root)
     
     while q:
         node = q.popleft()
+        print(node)
         
         for cur in graph[node]:
             if visited[cur]:
                 continue
             visited[cur] = True
-            print(cur)
             q.append(cur)
 
 n = len(graph)

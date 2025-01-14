@@ -1,5 +1,3 @@
-import time
-
 graph = [
     [],
     [3, 2],
@@ -11,21 +9,27 @@ graph = [
     [2]
     ]
 
-def dfs(graph, root):
+def dfs(graph, n, root):
     visited = [False]*n
-    time.sleep(1)
     
     stack = []
-    stack.append(root)
+    stack.append((root,0))
     
     while stack:
-        time.sleep(1)
-        node = stack.pop()
-        print(node,stack)
+        node, length = stack.pop()
+        visited[node] = True
+        print(node, stack)
+        
+        length += 1
         for cur in graph[node]:
-            stack.append(cur)
+            if cur == target:
+                print((target, length))
+                return 
+            if not visited[cur]:
+                stack.append((cur,length))
 
 
 n = len(graph)
 root = 1
-dfs(graph, root)
+target = 5
+dfs(graph, n, root)
