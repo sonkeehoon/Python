@@ -14,8 +14,11 @@ if res.status_code == 200: # 정상 연결상태면
     soup = BeautifulSoup(txt, 'html.parser')
     td_titles = soup.find_all('td', attrs={"class":"tit"})
     td_sales = soup.find_all('td', attrs={"class":"sale"})
-    path = Path.home()/"Desktop"
-    f = open(f"{path}/실시간_전세계_환율.txt", 'w', encoding="utf-8")
+    
+    path = Path.home() / "Desktop"
+    today = str(datetime.datetime.now().strftime('%y%m%d'))
+    
+    f = open(f"{path}/{today}_전세계_환율.txt", 'w', encoding="utf-8")
     f.write(str(datetime.datetime.now().strftime('%Y-%m-%d %H:%M'))+ ' 환율\n\n')
     for i in range(len(td_titles)):
         title = td_titles[i]
