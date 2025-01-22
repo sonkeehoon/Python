@@ -17,7 +17,7 @@ if res.status_code == 200: # 정상 연결상태면
         title = td_titles[i]
         sale = td_sales[i]
         
-        f.write(f'{title.a.text.strip()}      {sale.text}\n')
+        f.write(f'{title.a.text.strip():-<20}{sale.text}\n')
 
 else:
     print(res.status_code)
