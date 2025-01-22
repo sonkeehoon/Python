@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import datetime
 
+# 네이버의 환율페이지를 참고
 url = "https://finance.naver.com/marketindex/exchangeList.naver"
 res = requests.get(url)
 
