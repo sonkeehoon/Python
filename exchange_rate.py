@@ -2,6 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 import datetime
+from pathlib import Path
 
 # 네이버의 환율페이지를 참고
 url = "https://finance.naver.com/marketindex/exchangeList.naver"
@@ -15,17 +16,23 @@ if res.status_code == 200: # 정상 연결상태면
 
     today = str(datetime.datetime.now().strftime('%y%m%d'))
     
-    f = open(f"./{today}_전세계_환율.txt", 'w', encoding="utf-8")
+    if not Path("./세계환율").exists():
+        Path("./세계환율").mkdir()
+    
+    f = open(f"./세계환율/{today}.txt", 'w', encoding="utf-8")
     f.write(str(datetime.datetime.now().strftime('%Y-%m-%d %H:%M'))+ ' 환율\n\n')
+    
     for i in range(len(td_titles)):
         title = td_titles[i]
         sale = td_sales[i]
         print(f"{title.a.text.strip():-<20} {sale.text}")
         f.write(f"{title.a.text.strip():-<20} {sale.text}\n")
+    
+    f.close()
 
 else:
     print(res.status_code)
 
-f.close()
+
     
     
