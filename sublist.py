@@ -16,7 +16,6 @@ def get_sublist(lst: list,
         line = []
         
         for j in range(y1, y2+1):
-            
             if j < x2:
                 line.append(lst[i][j])
                 
