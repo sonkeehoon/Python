@@ -1,10 +1,10 @@
-## 백준 사이트(https://www.acmicpc.net/) 문제 솔루션
+## Baekjoon Online Judge (https://www.acmicpc.net/) Problem Solutions
 
-폴더 1 : 1000번대 문제 (ex 1004)
+Folder 1: Problems in the 1000s (e.g., 1004)
 
-폴더 2 : 2000번대 문제
+Folder 2: Problems in the 2000s
 
-폴더 3~9 : 위와 동일
+Folders 3–9: Same as above
 
-폴더 10 : 10000번대 문제
+Folder 10: Problems in the 10000s
 
