@@ -11,7 +11,7 @@ node2.myNext = node3
 
 cur = node1 # 시작 노드
 while cur.myNext is not None: # 다음 가리키는 노드가 없을 때 까지 반복합니다
-    print(f"current value :", cur.value, "| next value :", cur.myNext.value) # 현재 값을 출력
+    print(f"current value :", cur.value, "| next value :", cur.myNext.value) # 현재 값과 다음 값을 출력
     cur = cur.myNext # cur을 다음으로 가리키는(myNext) 노드로 갱신해줍니다
     
 print("end value is", cur.value, "| next value :", cur.myNext)
