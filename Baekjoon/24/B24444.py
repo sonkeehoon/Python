@@ -14,6 +14,7 @@ for _ in range(M):
 
 for nodes in graph:
     nodes.sort()
+    
 queue = deque([R])
 visited = [False] * (N + 1)
 visited[R] = True
