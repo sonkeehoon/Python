@@ -12,4 +12,4 @@ for _ in range(n):
         del d[name]
 
 print(*sorted(d.keys(), reverse = True), sep= '\n')
-    
+
