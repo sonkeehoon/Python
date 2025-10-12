@@ -1,7 +1,6 @@
 # 부분합: https://www.acmicpc.net/problem/1806
 import sys
 input = sys.stdin.readline
-import time
 
 n, s = map(int, input().split())
 arr = list(map(int, input().split()))
@@ -11,8 +10,6 @@ _sum = sum(arr[i:j + 1])
 min_len = float("inf")
 
 while i < n:
-    time.sleep(0.5)
-    print(i, j, _sum, min_len)
     
     if _sum >= s:
         min_len = min(min_len, j - i + 1)
