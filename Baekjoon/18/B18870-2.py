@@ -1,5 +1,5 @@
 # 좌표 압축: https://www.acmicpc.net/problem/18870
-# heapq 풀이 (효율 안좋음)
+# heapq 풀이(속도 느림, 메모리 적게 씀)
 import sys
 import heapq
 input = sys.stdin.readline

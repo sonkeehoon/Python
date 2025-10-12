@@ -1,5 +1,5 @@
 # 좌표 압축: https://www.acmicpc.net/problem/18870
-# 정렬 풀이(효율 좋음)
+# 정렬 풀이(속도 빠름, 메모리 많이 씀)
 import sys
 input = sys.stdin.readline
 n = int(input())
